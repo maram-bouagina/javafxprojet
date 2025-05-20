@@ -1,8 +1,9 @@
-package application;
+package model;
 
 import java.util.List;
 
 public class Client {
+			private long id;
 			private String nom;
 			private String adresse;
 			private String tel;
@@ -24,6 +25,18 @@ public class Client {
 			}
 			public void setTel(String tel) {
 				this.tel = tel;
+			}
+			public long getId() {
+				return id;
+			}
+			public void setId(long id) {
+				this.id = id;
+			}
+			public List<Appareil> getApps() {
+				return apps;
+			}
+			public void setApps(List<Appareil> apps) {
+				this.apps = apps;
 			}
 			
 }

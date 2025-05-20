@@ -1,25 +1,20 @@
-package application;
-
-import java.util.List;
+package model;
 
 public class Appareil {
+    private long id;
+
 			private Client client;
 			private Categorie categorie;
 			private String description;
 			private String marque;
-			private List<OrdreDeReparation> ordrerep;
+		
 			public Client getClient() {
 				return client;
 			}
 			public void setClient(Client client) {
 				this.client = client;
 			}
-			public List<OrdreDeReparation> getOrdrerep() {
-				return ordrerep;
-			}
-			public void setOrdrerep(List<OrdreDeReparation> ordrerep) {
-				this.ordrerep = ordrerep;
-			}
+		
 			public Categorie getCategorie() {
 				return categorie;
 			}
@@ -37,5 +32,11 @@ public class Appareil {
 			}
 			public void setMarque(String marque) {
 				this.marque = marque;
+			}
+			public long getId() {
+				return id;
+			}
+			public void setId(long id) {
+				this.id = id;
 			}     
 }

@@ -1,16 +1,32 @@
-package application;
+package model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class OrdreDeReparation {
-			private Appareil appareil;
+	private long id;
+			private List <Appareil> appareils=new ArrayList<> ();
 			private int nbHeureMo;
-			private  List <PieceAChanger> piecesAChanger;
-			public Appareil getAppareil() {
-				return appareil;
+			private  List <Piece> pieces=new ArrayList<> ();
+			private Client client;
+			public Client getClient() {
+				return client;
 			}
-			public void setAppareil(Appareil appareil) {
-				this.appareil = appareil;
+			public void setClient(Client client) {
+				this.client = client;
+			}
+			public long getId() {
+				return id;
+			}
+			public void setId(long id) {
+				this.id = id;
+			}
+		
+			public List<Appareil> getAppareils() {
+				return appareils;
+			}
+			public void setAppareils(List<Appareil> appareils) {
+				this.appareils = appareils;
 			}
 			public int getNbHeureMo() {
 				return nbHeureMo;
@@ -18,11 +34,11 @@ public class OrdreDeReparation {
 			public void setNbHeureMo(int nbHeureMo) {
 				this.nbHeureMo = nbHeureMo;
 			}
-			public List<PieceAChanger> getPiecesAChanger() {
-				return piecesAChanger;
+			public List<Piece> getPieces() {
+				return pieces;
 			}
-			public void setPiecesAChanger(List<PieceAChanger> piecesAChanger) {
-				this.piecesAChanger = piecesAChanger;
+			public void setPieces(List<Piece> pieces) {
+				this.pieces = pieces;
 			}
 			
 }
